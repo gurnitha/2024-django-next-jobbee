@@ -9,3 +9,10 @@ https://github.com/gurnitha/2024-django-next-jobbee
 
         new file:   .gitignore
         modified:   README.md
+
+#### 2. Membuat virtual environment
+
+        E:\_WORKSPACE\2024\django-api\ghulam-abbas\2024-django-next-jobbee
+        λ python -m venv venv31042
+
+        modified:   README.md
