@@ -23,3 +23,9 @@ https://github.com/gurnitha/2024-django-next-jobbee
         (venv31042) λ 
         (venv31042) λ python.exe -m pip install --upgrade pip
         (venv31042) λ pip install django==4.2.2
+
+#### 4. Install some drivers/modules
+
+        (venv31042) λ pip install boto3 django-cors-headers django-dotenv django-filter django-storages djangorestframework djangorestframework-simplejwt geocoder gunicorn whitenoise psycopg2 dj-database-url
+
+        modified:   README.md
