@@ -95,3 +95,74 @@ https://github.com/gurnitha/2024-django-next-jobbee
 
         modified:   README.md
         modified:   backend/backend/settings.py
+
+#### 7. Protecting the sensitive file
+
+        STEPS:
+
+        1. Check the installed modules
+
+        λ pip list                                     
+        Package                       Version          
+        ----------------------------- ------------     
+        asgiref                       3.7.2            
+        beautifulsoup4                4.12.2           
+        boto3                         1.34.14          
+        botocore                      1.34.14          
+        certifi                       2023.11.17       
+        charset-normalizer            3.3.2            
+        click                         8.1.7            
+        colorama                      0.4.6            
+        decorator                     5.1.1            
+        dj-database-url               2.1.0            
+        Django                        4.2.2            
+        django-cors-headers           4.3.1            
+        ==> django-dotenv                 1.4.2            
+        ==> django-environ                0.11.2           
+        django-filter                 23.5             
+        django-storages               1.14.2           
+        djangorestframework           3.14.0           
+        djangorestframework-simplejwt 5.3.1            
+        docopt                        0.6.2            
+        future                        0.18.3           
+        GDAL                          3.4.3            
+        geocoder                      1.38.1           
+        gunicorn                      21.2.0           
+        idna                          3.6              
+        jmespath                      1.0.1            
+        Js2Py                         0.74             
+        packaging                     23.2             
+        pip                           23.3.2           
+        pipwin                        0.5.2            
+        psycopg2                      2.9.9            
+        pyjsparser                    2.7.1            
+        PyJWT                         2.8.0            
+        PyPrind                       2.11.3           
+        pySmartDL                     1.3.4            
+        python-dateutil               2.8.2
+        python-dotenv                 1.0.0
+        python-env                    1.0.0            
+        python-environ                0.4.54           
+        pytz                          2023.3.post1     
+        ratelim                       0.1.6            
+        requests                      2.31.0           
+        s3transfer                    0.10.0           
+        setuptools                    63.2.0           
+        six                           1.16.0           
+        soupsieve                     2.5              
+        sqlparse                      0.4.4            
+        typing_extensions             4.9.0            
+        tzdata                        2023.4           
+        tzlocal                       5.2              
+        urllib3                       2.0.7            
+        whitenoise                    6.6.0
+
+        Note: requirements to setup environ variables are full filled.
+
+        2. Setup environ variables in settings.py
+           
+        modified:   README.md
+        modified:   backend/backend/settings.py
+                                               
+
+
