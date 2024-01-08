@@ -191,4 +191,13 @@ https://github.com/gurnitha/2024-django-next-jobbee
 
 ## 2. START WITH JOB RESOURCE                                   
 
+#### 1. Create a new app 'job'
 
+        modified:   README.md
+        new file:   backend/job/__init__.py
+        new file:   backend/job/admin.py
+        new file:   backend/job/apps.py
+        new file:   backend/job/migrations/__init__.py
+        new file:   backend/job/models.py
+        new file:   backend/job/tests.py
+        new file:   backend/job/views.py
