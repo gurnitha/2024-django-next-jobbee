@@ -47,9 +47,15 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 
-    'django.contrib.gis',
 
-    # locals
+    # Third parties
+    'rest_framework',
+    'corsheaders',
+    'storages',
+    'django.contrib.gis',
+    'django_filters',
+
+    # Locals
     'job.apps.JobConfig',
 ]
 

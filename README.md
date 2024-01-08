@@ -218,7 +218,7 @@ https://github.com/gurnitha/2024-django-next-jobbee
 
         modified:   README.md
         modified:   backend/job/models.py
-        
+
         STEPS:
 
         1. Go here: https://developer.mapquest.com/
@@ -227,4 +227,13 @@ https://github.com/gurnitha/2024-django-next-jobbee
         4. Add the key to .env file as GEOCODER_API
         5. Setup Geocoder in the model
 
-        Test: server still running :) 
+        Test: server still running :)                                   
+
+#### 5. Run migrations and create first job
+
+        modified:   backend/backend/settings.py
+        modified:   backend/job/admin.py
+        new file:   backend/job/migrations/0001_initial.py
+        modified:   backend/job/models.py
+
+        :)

@@ -4,12 +4,14 @@
 from datetime import *
 from django.db import models
 from django.contrib.auth.models import User 
-from django.core.validators import MinValueValidator, MaxValueValidator
-from django.contrib.gis.db import models as gismodels
-from django.contrib.gis.geos import Point 
 
 import geocoder
 import os 
+
+from django.contrib.gis.db import models as gismodels
+from django.contrib.gis.geos import Point 
+
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 # Locals
 
@@ -61,12 +63,15 @@ class Job(models.Model):
 	createdAt = models.DateTimeField(auto_now_add=True)
 	updatedAt = models.DateTimeField(auto_now=True)
 
-	# Save function to overide the 'point' field
+	# # Save function to overide the 'point' field
 	def save(self, *args, **kwargs):
 		g = geocoder.mapquest(self.address, key=os.environ.get('GEOCODER_API'))
 
-		lng = g.lng 
+		print(g)
+
+		lng = g.lng
 		lat = g.lat
 
 		self.point = Point(lng, lat)
 		super(Job, self).save(*args, **kwargs)
+        
