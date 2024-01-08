@@ -163,6 +163,18 @@ https://github.com/gurnitha/2024-django-next-jobbee
            
         modified:   README.md
         modified:   backend/backend/settings.py
-                                               
+
+#### 8. Install a fresh new PostgreSQL 16.1 and create a new db
+
+        modified:   README.md
+        
+        Note:
+
+        1. Create a new db '2024_django_next_jobbee_api' 
+        2. Password: root
+        3. Port    : 5433
+        4. Tested: (venv31042) λ python manage.py runserver
+
+        :)                                     
 
 
