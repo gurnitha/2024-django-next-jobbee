@@ -212,4 +212,19 @@ https://github.com/gurnitha/2024-django-next-jobbee
 #### 3. Created models
 
         modified:   README.md
+        modified:   backend/job/models.py                                   
+
+#### 4. Adding GeoCoder to generate coordinates
+
+        modified:   README.md
         modified:   backend/job/models.py
+        
+        STEPS:
+
+        1. Go here: https://developer.mapquest.com/
+        2. Create account + login
+        3. Scrol down to Manage Keys + copy the key
+        4. Add the key to .env file as GEOCODER_API
+        5. Setup Geocoder in the model
+
+        Test: server still running :) 

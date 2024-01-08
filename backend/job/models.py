@@ -8,6 +8,9 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 from django.contrib.gis.db import models as gismodels
 from django.contrib.gis.geos import Point 
 
+import geocoder
+import os 
+
 # Locals
 
 # Create your models here.
@@ -57,3 +60,13 @@ class Job(models.Model):
 	user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True) # Set the field null if user deleted the input
 	createdAt = models.DateTimeField(auto_now_add=True)
 	updatedAt = models.DateTimeField(auto_now=True)
+
+	# Save function to overide the 'point' field
+	def save(self, *args, **kwargs):
+		g = geocoder.mapquest(self.address, key=os.environ.get('GEOCODER_API'))
+
+		lng = g.lng 
+		lat = g.lat
+
+		self.point = Point(lng, lat)
+		super(Job, self).save(*args, **kwargs)
