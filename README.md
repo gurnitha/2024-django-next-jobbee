@@ -207,4 +207,9 @@ https://github.com/gurnitha/2024-django-next-jobbee
         modified:   README.md
         modified:   backend/backend/settings.py
 
-        Note: tested :)
+        Note: tested :)                                   
+
+#### 3. Created models
+
+        modified:   README.md
+        modified:   backend/job/models.py
