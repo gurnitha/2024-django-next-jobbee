@@ -29,3 +29,13 @@ https://github.com/gurnitha/2024-django-next-jobbee
         (venv31042) λ pip install boto3 django-cors-headers django-dotenv django-filter django-storages djangorestframework djangorestframework-simplejwt geocoder gunicorn whitenoise psycopg2 dj-database-url
 
         modified:   README.md
+
+#### 5. Create proyek django 'backend'
+
+        modified:   README.md
+        new file:   backend/backend/__init__.py
+        new file:   backend/backend/asgi.py
+        new file:   backend/backend/settings.py
+        new file:   backend/backend/urls.py
+        new file:   backend/backend/wsgi.py
+        new file:   backend/manage.py
