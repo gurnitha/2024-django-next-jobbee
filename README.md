@@ -186,6 +186,9 @@ https://github.com/gurnitha/2024-django-next-jobbee
         1. Sukses alter user dengan password baru
         2. Tested
 
-        :)                                    
+        :) 
+
+
+## 2. START WITH JOB RESOURCE                                   
 
 
