@@ -200,4 +200,11 @@ https://github.com/gurnitha/2024-django-next-jobbee
         new file:   backend/job/migrations/__init__.py
         new file:   backend/job/models.py
         new file:   backend/job/tests.py
-        new file:   backend/job/views.py
+        new file:   backend/job/views.py                                   
+
+#### 2. Register job app to settings.py
+
+        modified:   README.md
+        modified:   backend/backend/settings.py
+
+        Note: tested :)
