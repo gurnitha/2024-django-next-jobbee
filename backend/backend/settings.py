@@ -73,10 +73,24 @@ WSGI_APPLICATION = "backend.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# Default db
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
+
+# Postgres db
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        # 'ENGINE': 'django.db.backends.postgresql',
+        'NAME': '2024_django_next_jobbee_api',
+        'USER': 'postgres',
+        'PASSWORD':'postgres',
+        'HOST': 'localhost',
+        'PORT': 5432
     }
 }
 

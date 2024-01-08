@@ -39,3 +39,25 @@ https://github.com/gurnitha/2024-django-next-jobbee
         new file:   backend/backend/urls.py
         new file:   backend/backend/wsgi.py
         new file:   backend/manage.py
+
+#### 6. Create Postgres DB dan konek DB dengan proyek
+
+        STEPS:
+
+        1. PostgreSQL db was installed
+        2. Open PgAdmin 4 + password: postgres
+        3. Create a new db: 
+           - name: 2024_django_next_jobbee_api
+           - owner: postgres
+           - password:postgres? not sure
+        4. Start server 
+
+        Note: It raised issues as seen bellow:
+
+        raise ImproperlyConfigured(
+        django.core.exceptions.ImproperlyConfigured: Could not find the GDAL library (tried "gdal306", "gdal305", "gdal304", "gdal303", "gdal302", "gdal301", "gdal300", "gdal204", "gdal203", "gdal202"). Is GDAL installed? If it is, try setting GDAL_LIBRARY_PATH in your settings.
+
+        modified:   README.md
+        modified:   backend/backend/settings.py
+
+         NEXT: Setup GDAL on Windows
