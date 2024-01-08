@@ -61,3 +61,37 @@ https://github.com/gurnitha/2024-django-next-jobbee
         modified:   backend/backend/settings.py
 
          NEXT: Setup GDAL on Windows
+
+#### 6. Setup GDAL on Windows
+
+        STEPS:
+
+        1. GeoDjango Installation
+           > https://docs.djangoproject.com/en/4.2/ref/contrib/gis/install/
+        2. Download gdal source: https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal
+           GDAL-3.4.3-cp310-cp310-win_amd64.whl
+        3. Download and install osgeo source: https://trac.osgeo.org/osgeo4w/
+        4. Modify Windows environment
+           1. Create a new file: setup.txt (any where) + open it
+           2. Copy and paste this code:
+
+           set OSGEO4W_ROOT=C:\OSGeo4W
+           set GDAL_DATA=%OSGEO4W_ROOT%\apps\gdal\share\gdal
+           set PROJ_LIB=%OSGEO4W_ROOT%\share\proj
+           set PATH=%PATH%;%OSGEO4W_ROOT%\bin
+           reg ADD "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v Path /t REG_EXPAND_SZ /f /d "%PATH%"
+           reg ADD "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v GDAL_DATA /t REG_EXPAND_SZ /f /d "%GDAL_DATA%"
+           reg ADD "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /v PROJ_LIB /t REG_EXPAND_SZ /f /d"%PROJ_LIB%"
+           
+           3. Save the file
+           4. Change the file extention from .txt to .bat
+           5. Run it as administrator
+           6. Resutls
+              - Path file will change automatically
+              - New folder added automaically to C:\OSGeo4W
+        5. Run the server
+
+        DONE :)
+
+        modified:   README.md
+        modified:   backend/backend/settings.py
