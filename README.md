@@ -227,7 +227,7 @@ https://github.com/gurnitha/2024-django-next-jobbee
         4. Add the key to .env file as GEOCODER_API
         5. Setup Geocoder in the model
 
-        Test: server still running :)                                   
+        Test: server still running :)
 
 #### 5. Run migrations and create first job
 
@@ -237,3 +237,31 @@ https://github.com/gurnitha/2024-django-next-jobbee
         modified:   backend/job/models.py
 
         :)
+
+#### 6. Get all jobs & serializing data
+
+        modified:   README.md
+        modified:   backend/backend/urls.py
+        new file:   backend/job/serializers.py
+        new file:   backend/job/urls.py
+        modified:   backend/job/views.py
+
+        Note: Using Postman
+
+        1. Download and install Postman
+        2. How to use it? 
+        2.1 Create account + login
+
+        2.2 Create a new Collections
+            > Environment > New > Environment
+            > Name: Jobbee Django > VARIABLE=DOMAIN > TYPE=default 
+            > INITIAL VALUE=http://localhost:8000 > CURRENT VALUE=http://localhost:8000 > Save > Close
+        2.3 Click listed environment (top-right side) > click Jobbee Django -> a new window displayed
+        2.4 Create a new domain: > GET > {{DOMAIN}}/api/jobs > Send > Save
+        2.5 Create a New Collection: Click New Collection > Name it 'Jobbee Django' > 
+            Create > Open it > New folder 'Jobs' > Create > Request name 'Get all jobs' > Save > Close
+        2.6 Use it: Click Collections > Jobbee Django > Jobs > Get all jobs > Send
+
+        Note: see images
+
+        Done :)
